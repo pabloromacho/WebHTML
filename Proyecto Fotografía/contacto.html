@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Pablo More</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pablo More</h1>
+        <nav>
+            <ul>
+           <li> <a href="index.html">Inicio</a></li>
+           <li>  <a href="video.html">Vídeo</Video></a></li>
+           <li>  <a href="galería.html">Galería</a></li>
+           <li>  <a href="contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+   
+<div class="contenedor-formulario">
+<form>
+    <label for="name">Nombre: </label>
+    <input type="text" id="Nombre" name="Nombre" placeholder="escribe aquí tu nombre" required minlength="3">
+    <label for="apellido">Apellido: </label>
+    <input type="text" id="apellido" name="apellido" placeholder="escribe aquí tu Apellido" required minlength="3">
+    <label for="mail">Correo: </label>
+    <input type="mail" id="mail" name="mail" placeholder="escribe aquí tu Correo" required>
+    <input type="telefono" id="telefono" name="telefono" placeholder="escribe aquí tu Telefono" required>
+    <select name="ciudad" name="ciudad">
+        <option value="Jerez">Jerez</option>
+        <option value="cadiz">Cádiz</option>
+        <option value="Sanfernando">San Fernando</option>
+        <option value="Guadalcacin">Guadalcacin</option>
+        <option value="elpuerto">El Puerto</option>
+        <option value="Otro">Otro</option>
+    </select>
+    <label for="comentario">Mensaje: </label>
+    <textarea name="comentario" id="comentario" placeholder="Escribe tu Mensaje"></textarea>
+<label for="motivo">Motivo de Contacto</label>
+<input type="radio" id="motivo" name="motivo"><i>Presupuesto</i>
+<input type="radio" id="motivo" name="motivo"><i>Consulta</i>
+<input type="submit" value="enviar">
+</form>
+    
+</div>
+
+
+    <footer class="footer">
+        <p>Derechos Reservados @2024 </p>
+    </footer>
+</body>
+</html>
